@@ -38,14 +38,14 @@ int16_t centrecountlcd(int16_t val, int16_t sw) {
 
 // This function included the typical LiquidCrystal_I2C setCursor and print functions. This helps to minimise the recalls line for each setCursor and print.
 void drawCentrelcd(const char* val, int16_t y) {
-  int16_t x = centrecountlcd(strlen(val), 16);
+  int16_t x = centrecountlcd(strlen(val), SCREEN_WIDTH);
   lcd.setCursor(x, y);
   lcd.print(String(val));
 }
 
 void testA() {
   // Testing Demo
-  for (int t = 0; t < 11; t++) {
+  for (int t = 0; t < 17; t++) {
     delay(1000);
     lcd.clear();
     const char* n;
@@ -94,6 +94,30 @@ void testA() {
       case 10:
         n = "abcdefghij";
         e = "ABCDEFGHIJ";
+        break;
+      case 11:
+        n = "abcdefghijk";
+        e = "ABCDEFGHIJK";
+        break;
+      case 12:
+        n = "abcdefghijkl";
+        e = "ABCDEFGHIJKL";
+        break;
+      case 13:
+        n = "abcdefghijklm";
+        e = "ABCDEFGHIJKLM";
+        break;
+      case 14:
+        n = "abcdefghijklmn";
+        e = "ABCDEFGHIJKLMN";
+        break;
+      case 15:
+        n = "abcdefghijklmno";
+        e = "ABCDEFGHIJKLMNO";
+        break;
+      case 16:
+        n = "abcdefghijklmnop";
+        e = "ABCDEFGHIJKLMNOP";
         break;
     }
     drawCentrelcd(n, 0);
