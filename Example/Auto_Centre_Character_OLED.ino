@@ -22,6 +22,7 @@ Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, 
 void setup() {
   display.begin(OLED_ADDS, true);
   display.setTextColor(1);
+  display.setTextWrap(false);
   display.clearDisplay();
   drawCentre5pt("Demo", 2);  // Simply call the function with your text and y axis
   drawCentre10pt("Demo", 15); // different font size
