@@ -1,6 +1,6 @@
 
 // Auto Centre Character for Arduino LCD Displays.
-// An example of using LiquidCrystal_I2C libraries to demonstrate the feature.
+// An example of using LiquidCrystal_I2C library to demonstrate the feature.
 // Please Note: This automation only help to center x axis, user still have to manually input y axis.
 // Please Note: This feature does not prevent overflow of characters in the given screen width.
 
