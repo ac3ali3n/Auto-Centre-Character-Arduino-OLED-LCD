@@ -56,7 +56,6 @@ int16_t centrecount(int16_t val, int16_t sw, int16_t pt, int16_t r) {
 
 // The following list of sizes are for the default font used in Adafruit library.
 // Each of the list has included the typical Adafruit setTextSize, setCursor and print functions. This helps to minimise the recalls line for each setCursor and print.
-
 // Text size 1 5x7 (with 1px gap)
 void drawCentre5pt(const char* val, int16_t y) {
   int16_t x = centrecount(strlen(val), SCREEN_WIDTH, 5, 1);
@@ -90,6 +89,11 @@ void testA() {
     const char* i;
     const char* j;
     switch (t) {
+      case 0:
+        h = "";
+        i = "";
+        j = "";
+        break;
       case 1:
         h = "a";
         i = "A";
@@ -178,6 +182,12 @@ void testB() {
     const char* e;
     const char* g;
     switch (t) {
+      case 0:
+        o = "";
+        p = "";
+        e = "";
+        g = "";
+        break;
       case 1:
         o = "Connecting WiFi SSID:";
         p = "My_Home_WiFi";
