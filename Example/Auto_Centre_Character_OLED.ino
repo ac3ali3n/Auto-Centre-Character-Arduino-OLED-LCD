@@ -83,7 +83,7 @@ void drawCentre15pt(const char* val, int16_t y) {
 
 void testA() {
   // Testing Demo
-  for (int t = 0; t < 15; t++) {
+  for (int t = 0; t < 14; t++) {
     display.clearDisplay();
     delay(200);
     const char* h;
@@ -133,37 +133,32 @@ void testA() {
       case 8:
         h = "abcdefgh";
         i = "ABCDEFGH";
-        j = "1234567";
+        j = "12345678";
         break;
       case 9:
         h = "abcdefghi";
         i = "ABCDEFGHI";
-        j = "1234567";
+        j = "123456789";
         break;
       case 10:
         h = "abcdefghij";
         i = "ABCDEFGHIJ";
-        j = "1234567";
+        j = "1234567890";
         break;
       case 11:
         h = "abcdefghijk";
-        i = "ABCDEFGHIJ";
-        j = "1234567";
+        i = "ABCDEFGHIJK";
+        j = "12345678901";
         break;
       case 12:
         h = "abcdefghijkl";
-        i = "ABCDEFGHIJ";
-        j = "1234567";
+        i = "ABCDEFGHIJKL";
+        j = "123456789012";
         break;
       case 13:
         h = "abcdefghijklm";
-        i = "ABCDEFGHIJ";
-        j = "1234567";
-        break;
-      case 14:
-        h = "abcdefghijklmn";
-        i = "ABCDEFGHIJ";
-        j = "1234567";
+        i = "ABCDEFGHIJKLM";
+        j = "1234567890123";
         break;
     }
     drawCentre5pt(h, 2);
@@ -183,12 +178,6 @@ void testB() {
     const char* e;
     const char* g;
     switch (t) {
-      case 0:
-        o = "";
-        p = "";
-        e = "";
-        g = "";
-        break;
       case 1:
         o = "Connecting WiFi SSID:";
         p = "My_Home_WiFi";
