@@ -84,8 +84,8 @@ void drawCentre15pt(const char* val, int16_t y) {
 void testA() {
   // Testing Demo
   for (int t = 0; t < 14; t++) {
-    display.clearDisplay();
     delay(200);
+    display.clearDisplay();
     const char* h;
     const char* i;
     const char* j;
@@ -171,8 +171,8 @@ void testA() {
 void testB() {
   // Typical Application DEMO
   for (int t = 0; t < 18; t++) {
-    display.clearDisplay();
     delay(1000);
+    display.clearDisplay();
     const char* o;
     const char* p;
     const char* e;
